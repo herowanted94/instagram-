@@ -1,0 +1,38 @@
+<ion-view>
+<ion-header-bar align-title="left" >
+    <div class="buttons" >
+        <button class="button button-icon ion-ios-close-empty" ng-click="goBack()">   Photo</button>
+    </div>
+    <h1 class="title"></h1>
+    <div class="buttons">
+        <button class="button button-clear button-calm" ng-click="confirmPost()">Next</button>
+    </div>
+</ion-header-bar>
+
+  <ion-content class="padding">
+    <div ng-if="tabs.gallery">
+      <button class="button button-full button-black" ng-click="choosePhoto()">
+          Choose a Photo
+      </button>
+    </div>
+
+    <div ng-if="tabs.photo">
+      <button class="button button-full button-black" ng-click="takePhoto()">
+          Take a Photo
+      </button>
+    </div>
+
+    <center>
+      <img ng-src="{{lastPhoto}}" style="text-align: center">
+    </center>
+  </ion-content>
+
+  <div class="tabs tabs-light">
+    <a class="tab-item" ng-class="{active: tabs.gallery == true }" ng-click="gallery()">
+        Gallery
+    </a>
+    <a class="tab-item" ng-class="{active: tabs.photo == true }" ng-click="photo()">
+        Photo
+    </a>
+  </div>
+</ion-view>

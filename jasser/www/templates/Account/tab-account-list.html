@@ -1,0 +1,60 @@
+<ion-view hide-back-button="true">
+	<ion-nav-title>
+     jass3r
+    </ion-nav-title>
+
+    <ion-nav-buttons side="left">
+      <a class="button button-icon icon ion-android-person-add" href="">
+      </a>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+      <a nav-direction="swap" class="button button-icon icon ion-android-settings" href="#/tab/account/options">
+      </a>
+    </ion-nav-buttons>
+
+  <ion-content  ng-init="loadImages()">
+      <ion-refresher
+        pulling-text="Pull to refresh..."
+        >
+      </ion-refresher>
+      <div class="item-avatar item-thumbnail-left">
+	    	<img class="img-custom" src="https://scontent-arn2-1.cdninstagram.com/t51.2885-19/11241853_1441084022872128_1488102029_a.jpg">
+            <div class="row list-borderless">
+			     <a class="item item-text-wrap txt-custom"><p><b>13</b><br>posts</p></a>
+              <a class="item item-text-wrap txt-custom"><p><b>2321</b><br>followers</p></a>
+              <a class="item item-text-wrap txt-custom"><p><b>1697</b><br>following</p></a>
+			      </div>
+			      <a class="button button-small button-full button-stable btn-edit"><b>Edit Your Profile</b></a>
+      </div>
+    	<div class="item-text-wrap bio-custom">
+        <b>J.A</b>
+        <p>🇫🇮/🇵🇸 Mixed Martial Arts 👊🏻 Modelling 📸 University 🎓 Love the world. Be loved ❤️ sc💥 greenemerald94</p>
+      </div>
+    	<div class="item button-bar btn-bar-custom">
+    		<a nav-direction="swap" class="item button button-icon icon ion-ios-keypad-outline " href="#/tab/account"></a>
+    		<a class="item button button-icon icon ion-ios-list-outline positive" href="#/tab/account/list"></a>
+    		<a nav-direction="swap"class="item button button-icon icon ion-ios-photos-outline" href="#/tab/account/photo"></a>
+        <a nav-direction="swap" class="item button button-icon icon ion-ios-pricetag" href="#/tab/saving"></a>
+    	</div>
+			<div class="card">
+				<div class="item item-avatar item-button-right avatar-bar-custom" href="#">
+					<img src="img/wiz.jpg">
+					<h2 class="padding-top">Wiz</h2>
+					<button class="button button-icon icon ion-android-more-vertical btn-avatar" ></button>
+				</div>
+
+				<div class="item item-image">
+					<img class="no margin" src="img/wiz.jpg">
+				</div>
+				<div class="">
+					<a class="button button-icon icon ion-ios-heart-outline" ng-click="doSomething()" ></a>
+					<a class="button button-icon icon ion-ios-chatbubble-outline" ng-click="doSomething()" ></a>
+					<a class="button button-icon icon ion-ios-paperplane-outline" ng-click="doSomething()" ></a>
+				</div>
+
+				<div class="item item-text-wrap">
+					<p> <a href="#" class="subdued ion-heart" > 2 Likes</a><br>
+				</div>
+			</div>
+  </ion-content>
+</ion-view>
